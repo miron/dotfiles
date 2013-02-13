@@ -358,7 +358,7 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Safari & WebKit                                                             #
 ###############################################################################
 
-# Set Safari’s home page to `about:blank` for faster loading
+# Set Safari’s home page to 'topsite'
 defaults write com.apple.Safari HomePage -string "topsite:"
 
 # Prevent Safari from opening ‘safe’ files automatically after downloading
