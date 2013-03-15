@@ -37,3 +37,27 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+
+# Tell ls to be colourful
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+# grc (colors in traceroute...)
+source "`brew --prefix grc`/etc/grc.bashrc"
+
+#colorful prompt
+PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$ '
+
+#gem executables
+export PATH=/usr/local/opt/ruby/bin:$PATH
+
+# German Settings
+#LANG=de_DE.ISO8859-1
+#MM_CHARSET=ISO-8859-1
+#export LANG MM_CHARSET
+
