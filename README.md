@@ -1,5 +1,7 @@
 # Miron's dotfiles
 
+some dotfiles for my arch linux installation
+
 ## Installation
 
 ### Using Git and the bootstrap script
