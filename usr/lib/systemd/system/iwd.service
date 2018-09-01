@@ -1,11 +1,12 @@
 [Unit]
 Description=Wireless service
-After=network.target
+Before=network.target
 Wants=network.target
 
 [Service]
 Type=dbus
 BusName=net.connman.iwd
+ExecStartPre=/bin/sleep 5
 ExecStart=/usr/lib/iwd/iwd
 LimitNPROC=1
 
