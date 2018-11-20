@@ -6,7 +6,7 @@ Wants=network.target
 [Service]
 Type=dbus
 BusName=net.connman.iwd
-ExecStartPre=/bin/sleep 5
+ExecStartPre=/bin/sleep 6
 ExecStart=/usr/lib/iwd/iwd
 LimitNPROC=1
 
